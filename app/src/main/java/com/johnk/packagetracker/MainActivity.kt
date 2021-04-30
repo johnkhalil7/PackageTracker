@@ -127,9 +127,9 @@ class MainActivity : AppCompatActivity(),
                     try {
                         var theList = response.getJSONArray("data")
                         var Data =
-                                theList.getJSONObject(0)//grabs weather array //grabs the index of the weather array
+                                theList.getJSONObject(0)
 
-                        name = Data.getString("name") //grabs description of the weather
+                        name = Data.getString("name") 
                         code = Data.getString("code")
                         println("this is the code: "+ code)
                         //output = "Name: " + name + "\nCode: " + code
@@ -143,7 +143,7 @@ class MainActivity : AppCompatActivity(),
             override  fun getHeaders() : MutableMap<String, String> {
                 val header = HashMap<String, String>()
                 header["Content-Type"] = "application/json; charset=UTF-8"
-                header["Trackingmore-Api-Key"] = "71e0b0c1-4afd-4109-bba4-69745e0dcdb9"
+                header["Trackingmore-Api-Key"] = /* INSERT API KEY HERE */
                 return header
             }
         }
@@ -191,7 +191,7 @@ class MainActivity : AppCompatActivity(),
             override  fun getHeaders() : MutableMap<String, String> {
                 val header = HashMap<String, String>()
                 header["Content-Type"] = "application/json; charset=UTF-8"
-                header["Trackingmore-Api-Key"] = "71e0b0c1-4afd-4109-bba4-69745e0dcdb9"
+                header["Trackingmore-Api-Key"] = /* INSERT API KEY HERE */
                 return header
             }
         }
@@ -203,7 +203,7 @@ class MainActivity : AppCompatActivity(),
     fun translateData(output: String){
         val thread = Thread(Runnable {
             try {
-                val authenticator = IamAuthenticator("_IdmTsj_fdcN2iZArD9fnGgAAQIQttprKYxI7PkLqYN9")
+                val authenticator = IamAuthenticator(/* INSERT API KEY HERE */)
                 val languageTranslator = LanguageTranslator("2018-05-01", authenticator)
                 languageTranslator.serviceUrl =
                         "https://api.us-east.language-translator.watson.cloud.ibm.com/instances/26cd5dbf-6db3-4150-a212-39a087339629"
