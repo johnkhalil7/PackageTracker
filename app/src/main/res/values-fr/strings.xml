@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PackageTracker</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="first_fragment_label">Premier Fragment</string>
+    <string name="second_fragment_label">Deuxième Fragment</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+    <string name="hello_first_fragment">Bonjour premier fragment</string>
+    <string name="hello_second_fragment">Bonjour deuxième fragment. Arg:% 1 $ s</string>
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="tab_1_fragment">Onglet 1</string>
+    <string name="tab_2_fragment">Onglet 2</string>
+    <string name="french">Français</string>
+    <string name="day_time_night_time">Heure de jour / Heure de nuit</string>
+    <string name="german">Allemand</string>
+    <string name="languages">Langues</string>
+    <string name="settings">Paramètres</string>
+    <string name="english">Anglais</string>
+    <string name="spanish">Espagnol</string>
+    <string name="search">Rechercher</string>
+
+    <string name="please_enter_your_tracking_number_above_and_hit_search">Veuillez entrer votre numéro de suivi ci-dessus et appuyez sur Rechercher</string>
+    <string name="help_tip">Veuillez cliquer plusieurs fois sur le bouton de recherche pour afficher les informations</string>
+</resources>
